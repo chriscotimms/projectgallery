@@ -1,7 +1,30 @@
 body {
-
+    margin: 0;
 }
 
-.project {
+header {
+    background:green;
+    height: 75px;
+}
 
+h1 {
+    text-align:center;
+    color: blanchedalmond;
+    margin: 0;
+}
+
+h2 {
+    text-align:center;
+    color: rgb(50, 255, 53);
+    margin: 0;
+}
+
+section {
+    display: flex;
+  }
+
+article {
+    background: purple;
+    padding:20px;
+    margin:10px;
 }
