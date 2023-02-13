@@ -7,6 +7,10 @@ header {
     padding: 0.5%;
 }
 
+p {
+    text-align: left;
+}
+
 h1 {
     text-align:center;
     color: blanchedalmond;
@@ -47,6 +51,7 @@ button {
     /*min-width:480px;*/
     max-width: 480px;
     flex-grow: 2;
+    text-align: center;
 
 }
 

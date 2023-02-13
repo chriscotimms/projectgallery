@@ -12,8 +12,6 @@ const showImage = () =>
 const showImage = (x) => 
 {
   document.getElementById(x).classList.toggle('hidden');
-  console.dir(document.getElementById(x));
-  console.dir(x);
 }
 
 
