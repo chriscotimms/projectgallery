@@ -11,7 +11,7 @@ h1 {
     text-align:center;
     color: blanchedalmond;
     margin: 0;
-    font-size: 4vmax;
+    font-size: 5vmax;
 }
 
 
@@ -19,13 +19,13 @@ h2 {
     text-align:center;
     color: rgb(99, 0, 145);
     margin: 0;
-    font-size: 3vmax;
+    font-size: 2.4vmax;
 }
 
 button {
-    padding: 5px;
+    padding: 2px;
     margin: 5px;
-    font-size: 16px;
+    font-size: 1.9vmax;
   }
 
 
@@ -35,19 +35,14 @@ button {
     flex-wrap:wrap;
     justify-content:center;
     align-items: flex-start;
-    
   }
  
 
 .initial {
     background-color: rgb(255, 200, 255);
     padding:1%;
-    margin:0.5%;
-    width:50%;
-    /*min-width:480px;*/
+    width:99%;
     max-width: 480px;
-    flex-grow: 2;
-
 }
 
 .initial > img {
@@ -61,16 +56,4 @@ button {
   }
 
 
-  @media screen and (min-width: 1366px) {
-
-    h1 {
-        font-size: 6vmin;
-    }
-
-    h2 {
-      font-size:4vmin;
-    }
-  }
-
-
-
+ 
