@@ -38,17 +38,38 @@ button {
   }
  
 
-.initial {
+  .initial {
     background-color: rgb(255, 200, 255);
     padding:1%;
-    width:99%;
+    margin:0.5%;
+    width:50%;
     max-width: 480px;
+    flex-grow: 2;
+    text-align: center;
 }
 
 .initial > img {
     width:100%;
     height:auto;
     margin:auto;
+}
+
+
+.intialenlarge {
+    background-color: rgb(255, 200, 255);
+    padding:1%;
+    margin:0.5%;
+    width:90%;
+    max-width: 1200px;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.intialenlarge > img {
+    width:100%;
+    height:auto;
+    margin:auto;
+    max-width: 480px;
 }
 
 .hidden {

@@ -11,15 +11,10 @@ const showImage = () =>
 
 
 
-
-
-
-
 const showImage = (x) => {
   document.getElementById(x).classList.toggle('hidden');
-  document.getElementById(x).parentElement.classList.toggle('enlarge');
-  console.dir(document.getElementById(x).parentElement.id);
-  console.dir(document.getElementById(x).parentElement.classList);
+  document.getElementById(x).parentElement.classList.toggle('initial');
+  document.getElementById(x).parentElement.classList.toggle('intialenlarge');
 }
 
 
