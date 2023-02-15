@@ -1,49 +1,44 @@
 const note = document.querySelectorAll('.initial');
 let btnSel = 'rifts';
 
-/*
-const showImage = () => 
-{
-  document.getElementById("first").classList.toggle('hidden');
-}
-*/
 
-
-
-
+//button function, x = Div id ("first", "second", "third")
 const showImage = (x) => {
-  
+
+//if new function input is not the same as previous input
 if (x !== btnSel) {
 
-  note.forEach ((element) => {
-    element.classList.remove('initialenlarge');
-    element.classList.add('initialshrink');
+  note.forEach ((element) => { //access each article  
+    element.classList.remove('initialenlarge'); //remove any 'initialenlarge' class  
+    element.classList.add('initialshrink'); //and shrink with 'initialshrink' class
   })
 
-  const vis = document.querySelectorAll('.visible');
-  vis.forEach ((element) => {
-    element.classList.remove('visible');
-    element.classList.add('hidden');
+  const vis = document.querySelectorAll('.visible'); //access inner div class
+  vis.forEach ((element) => { //for each div with visible class
+    element.classList.remove('visible'); //remove visible class
+    element.classList.add('hidden'); //add hidden class
   })
 
+  btnSel = x; //update btnSel as current selection
+
+//or if new function id input is not the same as previous input
 } else {
 
-  const intShr = document.querySelectorAll('.initialshrink');
-  intShr.forEach ((element) => {
-    element.classList.remove('initialshrink');
-    element.classList.add('initial');
+  const intShr = document.querySelectorAll('.initialshrink'); //access all <article>s with shrink class
+  intShr.forEach ((element) => { //for each:
+    element.classList.remove('initialshrink'); //remove shrink class
+    element.classList.add('initial'); //reset to inital class (medium sizing) for easier browsing
   })
 
-}
+  btnSel = 'rifts'; //update btnSel to force next function iteration to trigger condition (!==) of if statement above
 
+}
 
   document.getElementById(x).classList.toggle('hidden');
   document.getElementById(x).classList.toggle('visible');
   document.getElementById(x).parentElement.classList.add('initial');
   document.getElementById(x).parentElement.classList.remove('initialshrink');
   document.getElementById(x).parentElement.classList.toggle('initialenlarge');
-  
-  btnSel = x;
 }
 
 
