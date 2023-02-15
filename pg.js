@@ -17,7 +17,7 @@ if (x !== btnSel) {
 
   note.forEach ((element) => {
     element.classList.remove('initialenlarge');
-    element.classList.add('initial');
+    element.classList.add('initialshrink');
   })
 
   const vis = document.querySelectorAll('.visible');
@@ -26,11 +26,21 @@ if (x !== btnSel) {
     element.classList.add('hidden');
   })
 
-} 
+} else {
+
+  const intShr = document.querySelectorAll('.initialshrink');
+  intShr.forEach ((element) => {
+    element.classList.remove('initialshrink');
+    element.classList.add('initial');
+  })
+
+}
+
 
   document.getElementById(x).classList.toggle('hidden');
   document.getElementById(x).classList.toggle('visible');
-  document.getElementById(x).parentElement.classList.toggle('initial');
+  document.getElementById(x).parentElement.classList.add('initial');
+  document.getElementById(x).parentElement.classList.remove('initialshrink');
   document.getElementById(x).parentElement.classList.toggle('initialenlarge');
   
   btnSel = x;
