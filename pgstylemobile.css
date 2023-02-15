@@ -39,9 +39,9 @@ button {
  
 
   .initial {
-    background-color: rgb(255, 200, 255);
-    padding:1%;
-    margin:0.5%;
+    background-color:#DFF3E3;
+    padding:0.5%;
+    margin:0.15%;
     width:50%;
     max-width: 480px;
     flex-grow: 2;
@@ -50,22 +50,22 @@ button {
 
 .initial > img {
     width:100%;
-    height:auto;
     margin:auto;
 }
 
 
-.intialenlarge {
-    background-color: rgb(255, 200, 255);
+.initialenlarge {
+    background-color:#DFF3E3;
     padding:1%;
     margin:0.5%;
     width:90%;
-    max-width: 1200px;
+    max-width: 960px;
     flex-grow: 2;
     text-align: center;
+    -webkit-transition-duration: 0.1s;
 }
 
-.intialenlarge > img {
+.initialenlarge > img {
     width:100%;
     height:auto;
     margin:auto;
@@ -74,7 +74,11 @@ button {
 
 .hidden {
     display: none;
+    -webkit-transition-duration: 0.1s;
   }
 
+  .visible {
+    -webkit-transition-duration: 0.1s;
+  }
 
  

@@ -1,9 +1,11 @@
 body {
     margin: 0;
+    background-color: #DABECA;
+    color: #020202;
 }
 
 header {
-    background:green;
+    background:#DFF3E3;
     padding: 0.5%;
 }
 
@@ -13,7 +15,7 @@ p {
 
 h1 {
     text-align:center;
-    color: blanchedalmond;
+    color:#0B1E0F;
     margin: 0;
     font-size: 4vmax;
 }
@@ -44,14 +46,13 @@ button {
  
 
 .initial {
-    background-color: rgb(255, 200, 255);
-    padding:1%;
-    margin:0.5%;
+    background-color:#DFF3E3;
+    padding:0.5%;
+    margin:0.15%;
     width:50%;
     max-width: 480px;
     flex-grow: 2;
     text-align: center;
-    -webkit-transition-duration: 0.1s;
 }
 
 .initial > img {
@@ -60,26 +61,50 @@ button {
 }
 
 
-.intialenlarge {
-    background-color: rgb(255, 200, 255);
+.initialenlarge {
+    background-color:#DFF3E3;
     padding:1%;
     margin:0.5%;
     width:90%;
-    max-width: 1200px;
+    max-width: 960px;
     flex-grow: 2;
     text-align: center;
     -webkit-transition-duration: 0.1s;
 }
 
-.intialenlarge > img {
+.initialenlarge > img {
     width:100%;
     height:auto;
     margin:auto;
     max-width: 480px;
 }
 
+.initialshrink {
+    background-color:#DFF3E3;
+    padding:1%;
+    margin:0.5%;
+    width:10%;
+    max-width: 150px;
+    flex-grow: 2;
+    text-align: center;
+    -webkit-transition-duration: 0.1s;
+}
+
+.initialshrink > img {
+    width:100%;
+    height:auto;
+    margin:auto;
+    max-width: 480px;
+}
+
+
+
 .hidden {
     display: none;
+    -webkit-transition-duration: 0.1s;
+  }
+
+  .visible {
     -webkit-transition-duration: 0.1s;
   }
 

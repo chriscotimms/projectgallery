@@ -1,6 +1,5 @@
 const note = document.querySelectorAll('.initial');
-console.log(note);
-
+let btnSel = 'rifts';
 
 /*
 const showImage = () => 
@@ -11,10 +10,30 @@ const showImage = () =>
 
 
 
+
 const showImage = (x) => {
+  
+if (x !== btnSel) {
+
+  note.forEach ((element) => {
+    element.classList.remove('initialenlarge');
+    element.classList.add('initial');
+  })
+
+  const vis = document.querySelectorAll('.visible');
+  vis.forEach ((element) => {
+    element.classList.remove('visible');
+    element.classList.add('hidden');
+  })
+
+} 
+
   document.getElementById(x).classList.toggle('hidden');
+  document.getElementById(x).classList.toggle('visible');
   document.getElementById(x).parentElement.classList.toggle('initial');
-  document.getElementById(x).parentElement.classList.toggle('intialenlarge');
+  document.getElementById(x).parentElement.classList.toggle('initialenlarge');
+  
+  btnSel = x;
 }
 
 
