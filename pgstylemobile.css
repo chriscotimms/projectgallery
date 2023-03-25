@@ -1,84 +1,84 @@
 body {
     margin: 0;
+    background-color:#b6d1b6;
+    color: white;
+    font-family: 'Noto Serif Sinhala', serif;
+    font-size: 0.8em;
 }
 
-header {
-    background:green;
-    padding: 0.5%;
+img {
+    border-radius: 5px;
+    width: 100%;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 8px 2px;
+}
+
+p {
+    backdrop-filter: blur(14px) brightness(50%);
+    position: absolute;
+    width: 100%;
+    color: white;
 }
 
 h1 {
-    text-align:center;
-    color: blanchedalmond;
-    margin: 0;
-    font-size: 5vmax;
+    font-family: 'Yatra One', cursive;
+    font-size: 1.2rem;
+    padding:0.5em;
+    padding-left: 1em;
+    text-align: center;
+    text-shadow: 0px 0px 40px #1d221d, 0px -1px 3px #1d221d;
 }
-
 
 h2 {
-    text-align:center;
-    color: rgb(99, 0, 145);
-    margin: 0;
-    font-size: 2.4vmax;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 0px;
+    margin:3px;
+    display: none;
 }
-
-button {
-    padding: 2px;
-    margin: 5px;
-    font-size: 1.9vmax;
-  }
-
 
 #flexBody {
     display: flex;
-    flex-direction: row; 
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
   }
- 
 
-  .initial {
-    background-color:#DFF3E3;
-    padding:0.5%;
-    margin:0.15%;
-    width:50%;
-    max-width: 480px;
-    flex-grow: 2;
-    text-align: center;
-}
-
-.initial > img {
-    width:100%;
-    margin:auto;
+.initial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    width: 38em;
+    padding:0.25em;
+    position: relative;
+    height:max-content;
 }
 
 
-.initialenlarge {
-    background-color:#DFF3E3;
-    padding:1%;
-    margin:0.5%;
-    width:90%;
-    max-width: 960px;
-    flex-grow: 2;
-    text-align: center;
-    -webkit-transition-duration: 0.1s;
+.description {
+    backdrop-filter: blur(14px) brightness(50%);
+    position: absolute;
+    width: 96%;
+    color: white;
+    border-radius: 3px;
+    margin: 0%;
+    padding: 1%;
+    text-align: left;
+    max-height: 28em;
+    overflow:auto;
 }
 
-.initialenlarge > img {
-    width:100%;
-    height:auto;
-    margin:auto;
-    max-width: 480px;
+.adclass {
+    backdrop-filter: blur(14px) brightness(50%);
+    position: relative;
+    height: auto;
+    width: 100%;
+    color: white;
+    max-height: 90%;
 }
 
 .hidden {
     display: none;
-    -webkit-transition-duration: 0.1s;
-  }
+}
 
-  .visible {
-    -webkit-transition-duration: 0.1s;
-  }
-
- 
