@@ -1,5 +1,49 @@
-const note = document.querySelectorAll('.initial');
-let btnSel = 'rifts';
+const initial = document.querySelectorAll('.initial');
+const image = document.querySelectorAll('img');
+const btnbtn = document.querySelectorAll('.btn');
+
+const focusEvent = (e) => {
+  let temp = e.target.querySelector('.description');
+  temp.classList.toggle('hidden');
+}
+
+const unfocusEvent = (e) => {
+  let temp = e.target.querySelector('.description');
+  temp.classList.add('hidden');
+}
+
+const revealText = (e) => {
+  let pp = e.target.parentNode.querySelector('.pp');
+  pp.classList.toggle('hidden');
+  pp.classList.toggle('adclass');
+}
+
+function addListen() {
+initial.forEach((item) => {
+  item.addEventListener('focusin', focusEvent);
+  item.addEventListener('mouseenter', focusEvent);
+  item.addEventListener('focusout' , unfocusEvent);
+  item.addEventListener('mouseleave' , unfocusEvent);
+});
+};
+
+btnbtn.forEach((item) => {
+  item.addEventListener('click', revealText);
+})
+
+
+
+document.addEventListener('DOMContentLoaded', addListen, false);
+  
+
+
+
+
+
+/*
+
+
+//////previous code
 
 
 //button function, x = Div id ("first", "second", "third")
@@ -33,7 +77,6 @@ if (x !== btnSel) {
   btnSel = 'rifts'; //update btnSel to force next function iteration to trigger condition (!==) of if statement above
 
 }
-
   document.getElementById(x).classList.toggle('hidden');
   document.getElementById(x).classList.toggle('visible');
   document.getElementById(x).parentElement.classList.add('initial');
@@ -52,24 +95,4 @@ if (x !== btnSel) {
 
 
 
-
-
-
-
-
-/*
-
-let value = document.getElementsByTagName("article");
-console.log(value);
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
 */
-

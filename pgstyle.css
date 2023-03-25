@@ -1,16 +1,95 @@
 body {
     margin: 0;
-    background-color: #DABECA;
-    color: #020202;
+    background-color: #262626;
+    color: white;
 }
 
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+p {
+    backdrop-filter: blur(14px) brightness(50%);
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+#flexBody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+.initial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    width: 40em;
+    position: relative;
+}
+
+.description {
+    backdrop-filter: blur(14px) brightness(50%);
+    position: absolute;
+    width: 80%;
+    color: white;
+    border-radius: 10px;
+    margin: 1.6rem;
+    padding: 1.6rem;
+}
+
+.adclass {
+    backdrop-filter: blur(14px) brightness(50%);
+    position: relative;
+    height: auto;
+    width: 100%;
+    color: white;
+}
+
+.btn {
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 header {
-    background:#DFF3E3;
+    background:#B1AFFF;
     padding: 0.5%;
 }
 
 p {
     text-align: left;
+    color: black;
+    font-size: 2vw;
+    font-family: 'Tiro Telugu', serif;
+    letter-spacing: 0.03vmax;
+    line-height: 2.6vmax;
+    word-spacing: 0.5vmax;
 }
 
 h1 {
@@ -25,6 +104,7 @@ h2 {
     text-align:center;
     color: rgb(99, 0, 145);
     margin: 0;
+    font-family: 'Averia Serif Libre', cursive;
     font-size: 3vmax;
 }
 
@@ -41,7 +121,6 @@ button {
     flex-wrap:wrap;
     justify-content:center;
     align-items: flex-start;
-    
   }
  
 
@@ -53,6 +132,7 @@ button {
     max-width: 480px;
     flex-grow: 2;
     text-align: center;
+    -webkit-transition-duration: 0.1s;
 }
 
 .initial > img {
@@ -63,8 +143,8 @@ button {
 
 .initialenlarge {
     background-color:#DFF3E3;
-    padding:1%;
-    margin:0.5%;
+    padding:0.5%;
+    margin:0.15%;
     width:90%;
     max-width: 960px;
     flex-grow: 2;
@@ -80,9 +160,9 @@ button {
 }
 
 .initialshrink {
-    background-color:#DFF3E3;
-    padding:1%;
-    margin:0.5%;
+    background-color:#B8E8FC;
+    padding:0.5%;
+    margin:0.15%;
     width:10%;
     max-width: 150px;
     flex-grow: 2;
@@ -121,6 +201,6 @@ button {
       font-size:4vmin;
     }
   }
-
+*/
 
 
