@@ -63,10 +63,12 @@ h2 {
     color: white;
     border-radius: 3px;
     margin: 0%;
-    padding: 1%;
+    padding: 2%;
     text-align: left;
     max-height: 28em;
     overflow:auto;
+    text-align: justify;
+  text-justify: inter-word;
 }
 
 .adclass {
