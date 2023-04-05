@@ -4,7 +4,7 @@ const btnbtn = document.querySelectorAll('.btn');
 
 
 
-function addListen() {
+//function addListen() {
 
   initial.forEach((item) => {
     item.addEventListener('focusin', (event) => {
@@ -24,22 +24,22 @@ function addListen() {
       temp2.classList.add('hidden');
     }); 
 });
-};
+//};
 
 
-function addBtn() {
+//function addBtn() {
 btnbtn.forEach((item) => {
     item.addEventListener('click', (event) => {
-    let pp = event.target.closest('.pp');
+    let pp = event.target.parentNode.querySelector('.pp');
     pp.classList.toggle('hidden');
     pp.classList.toggle('adclass');
   }, true);
 });
-};
+//};
 
 
 
-document.addEventListener('DOMContentLoaded', addListen);
-document.addEventListener('DOMContentLoaded', addBtn);
+//document.addEventListener('DOMContentLoaded', addListen);
+//document.addEventListener('DOMContentLoaded', addBtn);
 
 
