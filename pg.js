@@ -33,11 +33,9 @@ btnbtn.forEach((item) => {
     let pp = event.target.parentNode.querySelector('.pp');
     pp.classList.toggle('hidden');
     pp.classList.toggle('adclass');
-    event.stopImmediatePropagation();
   }, true);
 });
 };
-
 
 
 
