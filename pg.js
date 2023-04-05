@@ -30,7 +30,7 @@ function addListen() {
 function addBtn() {
 btnbtn.forEach((item) => {
     item.addEventListener('click', (event) => {
-    let pp = event.target.parentNode.querySelector('.pp');
+    let pp = event.target.closest('.pp');
     pp.classList.toggle('hidden');
     pp.classList.toggle('adclass');
   }, true);
